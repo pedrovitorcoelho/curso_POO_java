@@ -1,3 +1,7 @@
+// Importando o package de animais;
+
+import animais.Cachorro;
+
 public class Main {
 
     // Primeiros passos para rodar um projeto java;
@@ -21,5 +25,30 @@ public class Main {
         byte varivaelByte = -128;
 
         System.out.println(varivaelByte);
+
+        // criando um objeto
+
+        //classe-> variável que vai ficar na memoria e será o objeto -> instanciando;
+        Cachorro cachorro1 = new Cachorro();
+
+        cachorro1.nome="peter";
+        cachorro1.cor="amarelo";
+        cachorro1.altura=25;
+        cachorro1.peso=13.4;
+
+        // imprimindo isso, será exibido o endereço na memória criado com esse objeto!
+        // System.out.println(cachorro1);
+
+        // veja que aqui retornará apenas o que está escrito lá dentro
+        cachorro1.latir();
+
+        // Vamos exibir um método que irá retornar algo, porém como não temos nenhuma exibição em tela, vamos por dentro de um sount
+        System.out.println(cachorro1.pegar());
+
+        // Trazendo um método com condições e parametro
+
+        System.out.println(cachorro1.interagir("bronca"));
+
+
     }
 }
