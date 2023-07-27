@@ -31,10 +31,18 @@ public class Main {
         //classe-> variável que vai ficar na memoria e será o objeto -> instanciando;
         Cachorro cachorro1 = new Cachorro();
 
-        cachorro1.nome="peter";
-        cachorro1.cor="amarelo";
-        cachorro1.altura=25;
-        cachorro1.peso=13.4;
+        // Inserindo valores das variáveis, com método SET, ou seja QUE PEGA
+        cachorro1.setNome("Luna");
+        cachorro1.setCor("Marrom");
+        cachorro1.setAltura(5);
+        cachorro1.setPeso(5.2);
+
+
+
+//        cachorro1.nome="peter";
+//        cachorro1.cor="amarelo";
+//        cachorro1.altura=25;
+//        cachorro1.peso=13.4;
 
         // imprimindo isso, será exibido o endereço na memória criado com esse objeto!
         // System.out.println(cachorro1);
@@ -47,7 +55,7 @@ public class Main {
 
         // Trazendo um método com condições e parametro
 
-        System.out.println(cachorro1.interagir("bronca"));
+        System.out.println(cachorro1.interagir("carinho"));
 
 
     }
