@@ -31,11 +31,18 @@ public class Main {
         //classe-> variável que vai ficar na memoria e será o objeto -> instanciando;
         Cachorro cachorro1 = new Cachorro();
 
-        // Inserindo valores das variáveis, com método SET, ou seja QUE PEGA
-        cachorro1.setNome("Luna");
-        cachorro1.setCor("Marrom");
-        cachorro1.setAltura(5);
-        cachorro1.setPeso(5.2);
+        //Usando o contructor, em vez da forma feita anteriormente, para pegar as variáveis
+
+
+        Cachorro cachorro2 = new Cachorro("Luna", "Marrom", 5, 5.2, "nada");
+
+
+
+//        // Inserindo valores das variáveis, com método SET, ou seja QUE PEGA
+//        cachorro1.setNome("Luna");
+//        cachorro1.setCor("Marrom");
+//        cachorro1.setAltura(5);
+//        cachorro1.setPeso(5.2);
 
 
 

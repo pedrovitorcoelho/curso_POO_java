@@ -2,6 +2,8 @@ package animais;
 
 public class Cachorro {
 
+    // VARIÁVEIS / ATRIBUTOS
+
 // nessa situação, estamos pondo como "public", pois poderá ser acessado em todo lugar
 // é importante falar que não estamos atribuindo valor as variáveis, pois uma vez atribuidas nesse espaço, esse valor será global
 //    public String nome;
@@ -20,6 +22,24 @@ public class Cachorro {
     private int altura;
     private double peso;
     private String sentimento;
+
+    // CONSTRUTORES
+
+    //Todo objeto possui um construtor padrão, default, quando criado, dessa forma
+    //Construtor padrão
+    public Cachorro(){}
+
+    //Gerando uns construtor adicional
+    public Cachorro(String nome, String cor, int altura, double peso, String sentimento) {
+        this.nome = nome;
+        this.cor = cor;
+        this.altura = altura;
+        this.peso = peso;
+        this.sentimento = sentimento;
+    }
+
+
+    // MÉTODOS
 
     // Com o private, só conseguimos acessar variáveis na mesma classe. Então, para que possamos acessar em outra classe, devemos fazer o seguinte:
 
