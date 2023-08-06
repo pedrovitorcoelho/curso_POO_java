@@ -1,5 +1,6 @@
 // Importando o package de animais;
 
+import Lojas.Petshop;
 import animais.Cachorro;
 import animais.Gato;
 import animais.Passaro;
@@ -113,6 +114,20 @@ public class Main {
         // Usando método override... SHOWWWW
         passaro1.soar();
         gato1.soar();
+
+        System.out.println("-------------------");
+
+        // Criando um objeto para o petshop
+
+        Petshop petshop = new Petshop();
+
+        petshop.darBanho(passaro1);
+
+        petshop.deixarNoHotel(gato1);
+
+        System.out.println(gato1.getEstadoDeEspirito());
+        System.out.println(passaro1.getEstadoDeEspirito());
+
 
     }
 }

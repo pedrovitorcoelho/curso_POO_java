@@ -23,4 +23,5 @@ public class Gato extends Animal{
     public void soar() {
         System.out.println("Miau Miau");
     }
+
 }
