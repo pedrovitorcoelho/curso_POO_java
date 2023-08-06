@@ -17,6 +17,8 @@ public class Cachorro {
     //public; protected; deafault; private;
     //É através desse métodos de acesso que teremos como pegamos variáveis
 
+    static int numeroDeCachorro;
+    // Com a variável static, estamos atribuindo ela a todos os objetos da classe, dessa forma conseguindo sabe quantos objetos estamos trabalhando
     private String nome;
     private String cor;
     private int altura;
@@ -36,6 +38,9 @@ public class Cachorro {
         this.altura = altura;
         this.peso = peso;
         this.sentimento = sentimento;
+
+        //Contando toda vez que um objeto é criando com esse construtor em especifico;
+        numeroDeCachorro++;
     }
 
 
@@ -44,6 +49,12 @@ public class Cachorro {
     // Com o private, só conseguimos acessar variáveis na mesma classe. Então, para que possamos acessar em outra classe, devemos fazer o seguinte:
 
     // GET, é que é pegar
+
+
+    // Obtendo o valor
+    public static int getNumeroDeCachorro() {
+        return numeroDeCachorro;
+    }
 
     public String getNome() {
         // Mas porque assim ?
@@ -87,9 +98,9 @@ public class Cachorro {
 
 
     // Vamos agora gerar um método PUBLICO (public) e que não retorna NADA, ou seja, não traz nenhuma informação quando é ativado (VOID)
-    public void latir() {
+    public void soar() {
         // aqui estamos apenas imprimindo em tela, é diferente de retornar, que pode vir várias vezes
-        System.out.println("Wouf Wouf");
+        System.out.println("AU AU");
     }
 
     // Agora vamos trabalhar com um método que tem um retorno, ou seja, ele irá retornar uma STRING.
@@ -121,5 +132,15 @@ public class Cachorro {
 //        } else {
 //            return sentimento = "tedio";
 //        }
+    }
+
+    // Método Override...
+
+    // Dessa foram, conseguimos reconhecer e imprimir objetos, em vez de exibir na memória...
+    @Override
+    public String toString() {
+        return "Cachorro{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
 }
